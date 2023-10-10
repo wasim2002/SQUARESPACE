@@ -1,0 +1,46 @@
+let tl = gsap.timeline()
+
+tl.from(".logo,h3",{
+    y:-100,
+    duration:0.6,
+    stagger:0.3,
+})
+tl.from(".img",{
+    scale:2,
+    opacity:0,
+    duration:0.8,
+    stagger:0.4
+})
+tl.from("h1",{
+    scale:0,
+    duration:0.8,
+    stagger:0.5
+})
+tl.from(".icon",{
+    x:-200,
+    opacity:0,
+    duration:0.5,
+    scale:2
+})
+tl.from(".anno",{
+    opacity:0,
+    duration:0.5,
+    scale:0
+})
+tl.from(".span",{
+    scale:0,
+    duration:1,
+})
+tl.from(".fa-brands",{
+    scale:0,
+    duration:0.5,
+    stagger:0.5,
+    opacity:0
+})
+tl.from(".scroll",{
+    y:30,
+    duration:1,
+    yoyo:true,
+    repeat:-1,
+    opacity:0
+})
